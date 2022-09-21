@@ -11,7 +11,7 @@ There should be whitespace between paragraphs. Vape migas chillwave sriracha pou
 >There should be no margin below this final sentence.
 
 First Header 2
-This is a normal paragraph following a header. Knausgaard kale chips snackwave microdosing cronut copper mug swag synth bitters letterpress glossier ***craft beer***. Mumblecore bushwick authentic gochujang vegan chambray meditation jean shorts irony. Viral farm-to-table kale chips, pork belly palo santo distillery activated charcoal aesthetic jianbing air plant woke lomo VHS organic. Tattooed locavore succulents heirloom, small batch sriracha echo park DIY af. Shaman you probably haven’t heard of them copper mug, crucifix green juice vape single-origin coffee brunch actually. Mustache etsy vexillologist raclette authentic fam. Tousled beard humblebrag asymmetrical. I love turkey, I love my job, I love my friends, I love Chardonnay!
+This is a normal paragraph following a header. Knausgaard kale chips snackwave microdosing cronut copper mug swag synth bitters letterpress glossier ***craft beer***. Mumblecore bushwick authentic gochujang vegan chambray meditation jean shorts irony. Viral farm-to-table kale chips, pork belly palo santo distillery activated charcoal aesthetic jianbing air plant woke lomo VHS organic. Tattooed locavore succulents heirloom, small batch sriracha echo park DIY af. Shaman you probably haven’t heard of them copper mug, crucifix red juice vape single-origin coffee brunch actually. Mustache etsy vexillologist raclette authentic fam. Tousled beard humblebrag asymmetrical. I love turkey, I love my job, I love my friends, I love Chardonnay!
 
 Deae legum paulatimque terra, non vos mutata tacet: dic. Vocant docuique me plumas fila quin afuerunt copia haec o neque.
 
@@ -84,7 +84,7 @@ Definition lists can be used with Markdown syntax. Definition headers are bold.
     - Birthplace
     - Japan
     - Color
-    - Green
+    - red
 Tables should have bold headings and alternating shaded rows.
 
 |Artist       |	Album	      |Year|
@@ -104,14 +104,25 @@ Code snippets like var `foo = "bar"; `can be shown inline.
 Also, `this should vertically align with this` and this.
 
 Code can also be shown in a block element.
-```
+```javascript
 foo := "bar";
 bar := "foo";
+```
 Code can also use syntax highlighting.
-```
-```
+<style>
+.red {
+    color: red;
+    font-weight:700;
+    font-size: 30px;
+}
+</style>
+
+
+```python
+
+
 func main() {
-  input :=![#ff0000](`var foo = "bar";`) `#ff0000`
+  input <div class="red">=var foo = "bar";</div>
 
   lexer := lexers.Get("javascript")
   iterator, _ := lexer.Tokenise(nil, input)
@@ -133,25 +144,31 @@ Ruby	foo = "bar"{
 Small images should be shown at their actual size.
 
 Picea
-
+____
 Large images should always scale down and fit in the content container.
+![
+Small images should be shown at their actual size.](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg)
 
 Picea
 
 The photo above of the Spruce Picea abies shoot with foliage buds: Bjørn Erik Pedersen, CC-BY-SA.
-
+![lwa<](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/1024px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg)
 Components
 Alerts
 This is an alert.
 Note
-This is an alert with a title.
+>This is an alert with a title.
 Note
 This is an alert with a title and Markdown.
 This is a successful alert.
-This is a warning.
+
+> **Warning**
+>This is a warning.
 Warning
 This is a warning with a title.
-Another Heading
-Add some sections here to see how the ToC looks like. Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.
+
+>Another Heading
+
+>Add some sections here to see how the ToC looks like. Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.
 
 Última modificación September 18, 2022: hugo (9ca5c97)
